@@ -1,0 +1,18 @@
+module player(VGA_clk, update, rst, xCount, yCount, blocks);
+input clk, rst, update;
+
+input [9:0]xCount;
+input [9:0]yCount;
+wire [9:0] xCount;
+wire [9:0] yCount;
+reg player;
+
+reg [9:0] playerX [0:31];
+reg [8:0] playerY [0:31];
+
+always@(posedge clk) 
+	begin	
+		player <= (xCount > blockSX[0] && xCount < (blockSX[0] + 10'd50)) && (yCount > blockSY[0] && yCount < (blockSY[0] + 10'd50));
+	end
+	
+endmodule

@@ -1,0 +1,4 @@
+module SpaceInvaders(board_clk, rst, VGA_R, VGA_G, VGA_B, hsync, vsync, clk, blank_n,left, right, shoot);
+input board_clk, rst; 
+input left, right,shoot;
+output hsync, vsync, clk, blank_n;
