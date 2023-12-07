@@ -1,0 +1,7 @@
+
+State Machine - |SpaceInvaders|player:play|S
+Name S.SHOOT S.RIGHT S.LEFT S.IDLE 
+S.IDLE 0 0 0 0 
+S.LEFT 0 0 1 1 
+S.RIGHT 0 1 0 1 
+S.SHOOT 1 0 0 1 
